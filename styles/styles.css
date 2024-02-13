@@ -65,19 +65,12 @@ body {
 }
 
 .welcome-sedona {
-    /*width: 1200px;*/
-    /*height: 485px;*/
     color: #000000;
     background-image: url("../images/background-image.jpg");
-    background-size: 100% auto;
+    background-size: 100% 100%;
     background-color: #ffffff;
     background-repeat: no-repeat;
-}
-
-.welcome-sedona-image {
-    /*margin: auto auto;*/
-    padding-top: 51px;
-    padding-bottom: 81px;
+    text-align: center;
 }
 
 .preview {
