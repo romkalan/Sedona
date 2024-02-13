@@ -60,6 +60,10 @@ body {
     text-decoration: none;
 }
 
+.link-button {
+    color: #ffffff;
+}
+
 .welcome-sedona {
     /*width: 1200px;*/
     /*height: 485px;*/
