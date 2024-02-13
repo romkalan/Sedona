@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>Седона-городок в аризоне</title>
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="styles/styles.css">
 </head>
 <body>
 
@@ -25,7 +25,7 @@
 		</ul>
 		<ul class="navigation-user">
 			<li class="navigation-item">
-				<a class="navigation-link search">
+				<a class="navigation-link search" href="#">
 					<span>Поиск</span>
 				</a>
 			</li>
@@ -47,14 +47,14 @@
 		Седона - город в Аризоне
 	</h1>
 	<section class="welcome-sedona">
-		<img src="images/context-logo/welcome-logo.png" width="458" height="352" alt="Добро пожаловать в Седону">
+		<img class="welcome-sedona-image" src="images/context-logo/welcome-logo.png" width="458" height="352" alt="Добро пожаловать в Седону">
 	</section>
 	<section class="preview">
 		<h2 class="visually-hidden">
 			Седона - это
 		</h2>
 		<p class="preview-title">
-			Седона — небольшой городок в Аризоне,
+			Седона — небольшой городок в Аризоне,<br>
 			заслуживающий большего!
 		</p>
 		<p class="preview-text">
@@ -130,7 +130,7 @@
 			Приезжайте в Седону
 		</h2>
 		<p class="preview-title">
-			Приезжайте в Седону отдохнуть
+			Приезжайте в Седону отдохнуть <br>
 			в комфорте и уюте!
 		</p>
 		<p class="preview-text">
@@ -188,7 +188,7 @@
 			Заинтересовались?
 		</h2>
 		<p class="to-catalog-text">
-			Укажите предполагаемые даты поездки,
+			Укажите предполагаемые даты поездки,<br>
 			и мы покажем вам лучшие предложения гостиниц в Седоне
 		</p>
 		<button class="to-catalog-button button">Поиск гостиницы в седоне</button>
@@ -198,17 +198,17 @@
 <footer class="page-footer">
 	<section class="subscribe">
 		<h2 class="subscribe-title">
-			Подпишись на рассылку
+			Подпишитесь на рассылку
 		</h2>
 		<p class="subscribe-text">
-			Только полезная информация и никакого спама,
+			Только полезная информация и никакого спама,<br>
 			честное бойскаутское!
 		</p>
 		<form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
 			<label>
-				<input type="text" name="appointment-email" placeholder="Ваш e-mail">
+				<input class="subscribe-form-input " type="text" name="appointment-email" placeholder="Ваш e-mail">
 			</label>
-			<button class="button" type="submit">
+			<button class="button-subscribe button" type="submit">
 				Подписаться
 			</button>
 		</form>
