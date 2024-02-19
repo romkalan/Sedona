@@ -361,19 +361,19 @@ ul {
 }
 
 .show-three-on-row {
-    background-image: url("../images/icons-for-filter/3-on-row.svg");
+    background-image: url("../images/icons-for-filter/filter-style-first.svg");
     background-repeat: no-repeat;
     border: 1px solid #333333;
 }
 
 .show-one-on-row {
-    background-image: url("../images/icons-for-filter/1-on-row.svg");
+    background-image: url("../images/icons-for-filter/filter-style-second.svg");
     background-repeat: no-repeat;
     border: 1px solid #E5E5E5;
 }
 
 .show-on-column {
-    background-image: url("../images/icons-for-filter/table-row.svg");
+    background-image: url("../images/icons-for-filter/filter-style-third.svg");
     background-repeat: no-repeat;
     border: 1px solid #E5E5E5;
 }
