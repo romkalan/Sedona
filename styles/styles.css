@@ -213,6 +213,11 @@ ul {
 }
 
 .subscribe-form-input {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
     background-color: #F2F2F2;
     border-bottom-left-radius: 4px;
     border-top-left-radius: 4px;
@@ -312,6 +317,16 @@ ul {
     font-weight: 400;
 }
 
+.price-input {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+    background-color: #F2F2F2;
+    border-radius: 4px;
+}
+
 .price-min, .price-max, .price-slider {
     font-size: 18px;
     line-height: 23px;
@@ -324,6 +339,15 @@ ul {
 
 .button-cancel {
     background-color: transparent;
+}
+
+.select-control {
+    font-family: "PT Sans", sans-serif;
+    color: #333333;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    background-color: #E5E5E5;
 }
 
 .search-filter {
