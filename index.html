@@ -8,10 +8,10 @@
 <body>
 
 <header class="page-header">
-	<a href="index.html" class="navigation-logo" aria-current="page">
-		<img src="images/context-logo/logo.svg" width="140" height="70" alt="Логотип Седона">
-	</a>
 	<nav class="navigation">
+		<a href="index.html" class="navigation-logo" aria-current="page">
+			<img src="images/context-logo/logo.svg" width="140" height="70" alt="Логотип Седона">
+		</a>
 		<ul class="navigation-list">
 			<li class="navigation-item">
 				<a class="navigation-link" href="index.html">Главная</a>
@@ -42,12 +42,13 @@
 	</nav>
 </header>
 
-<main class="main-index">
+<main class="main-container main-index">
 	<h1 class="visually-hidden">
 		Седона - город в Аризоне
 	</h1>
 	<section class="welcome-sedona">
-		<img class="welcome-sedona-image" src="images/context-logo/welcome-logo.png" width="458" height="352" alt="Добро пожаловать в Седону">
+		<img class="welcome-sedona-image" src="images/context-logo/welcome-logo.png" width="458" height="352"
+		     alt="Добро пожаловать в Седону">
 	</section>
 	<section class="preview">
 		<h2 class="visually-hidden">
@@ -68,7 +69,7 @@
 		<ul class="about-sedona-list">
 			<li class="about-sedona-item">
 				<div class="about-sedona-item-city">
-					<div>
+					<div class="about-sedona-item">
 						<h3 class="about-sedona-title">
 							Настоящий городок
 						</h3>
@@ -110,7 +111,7 @@
 			</li>
 			<li class="about-sedona-item">
 				<div class="about-sedona-item-bridge">
-					<div>
+					<div class="about-sedona-item">
 						<h3 class="about-sedona-title">
 							Там есть мост дьявола
 						</h3>
@@ -213,37 +214,40 @@
 			</button>
 		</form>
 	</section>
-	<section class="socials">
-		<h2 class="visually-hidden">
-			Социальные сети
-		</h2>
-		<ul class="socials-list">
-			<li class="socials-item">
-				<a class="socials-item-link vk-logo" href="#">
-					<span class="visually-hidden">Вконтакте</span>
-				</a>
-			</li>
-			<li class="socials-item">
-				<a class="socials-item-link tg-logo" href="#">
-					<span class="visually-hidden">Телеграм</span>
-				</a>
-			</li>
-			<li class="socials-item">
-				<a class="socials-item-link youtube-logo" href="#">
-					<span class="visually-hidden">Ютьюб</span>
-				</a>
-			</li>
-		</ul>
-	</section>
-	<section class="contacts">
-		<h2 class="visually-hidden">
-			Номер телефона
-		</h2>
-		<a class="footer-contacts-phone" href="tel:+78121212">+7 (812) 812-12-12</a>
-	</section>
-	<a class="footer-contacts-email-htmlacademy" href="https://htmlacademy.ru/" target="_blank">
-		<img class="html-academy-logo" src="images/context-logo/HTML-Academy-logo.svg" width="115" height="34" alt="Сайт html Academy" >
-	</a>
+	<div class="contacts-container">
+		<section class="socials">
+			<h2 class="visually-hidden">
+				Социальные сети
+			</h2>
+			<ul class="socials-list">
+				<li class="socials-item">
+					<a class="socials-item-link vk-logo" href="#">
+						<span class="visually-hidden">Вконтакте</span>
+					</a>
+				</li>
+				<li class="socials-item">
+					<a class="socials-item-link tg-logo" href="#">
+						<span class="visually-hidden">Телеграм</span>
+					</a>
+				</li>
+				<li class="socials-item">
+					<a class="socials-item-link youtube-logo" href="#">
+						<span class="visually-hidden">Ютьюб</span>
+					</a>
+				</li>
+			</ul>
+		</section>
+		<section class="contacts">
+			<h2 class="visually-hidden">
+				Номер телефона
+			</h2>
+			<a class="footer-contacts-phone" href="tel:+78121212">+7 (812) 812-12-12</a>
+		</section>
+		<a class="footer-contacts-email-htmlacademy" href="https://htmlacademy.ru/" target="_blank">
+			<img class="html-academy-logo" src="images/context-logo/HTML-Academy-logo.svg" width="115" height="34"
+			     alt="Сайт html Academy">
+		</a>
+	</div>
 </footer>
 
 </body>
