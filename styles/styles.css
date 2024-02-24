@@ -41,12 +41,15 @@ body {
     flex-grow: 1;
 }
 
-ul {
-    list-style: none;
-}
-
 .visually-hidden {
-    visibility: hidden;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 .main-index {
@@ -66,26 +69,39 @@ ul {
     line-height: 20px;
     text-transform: uppercase;
     text-align: center;
-    width: 160px;
+    min-width: 160px;
+    padding: 50px 8px;
 }
 
 .navigation {
     display: flex;
     margin: 0 auto;
-    width: 1060px;
+    max-width: 1060px;
+}
+
+.navigation-logo {
+    margin-right: 30px;
 }
 
 .navigation-list {
     margin: 0;
     padding: 0;
+    list-style: none;
     width: 400px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .navigation-user {
-    max-width: 300px;
-    margin-left: auto;
+    padding: 0;
+    width: 300px;
+    list-style: none;
+    margin: 0 0 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: flex-end;
 }
-
 
 .page-header {
     color: #000000;
@@ -93,27 +109,34 @@ ul {
 }
 
 .navigation-link {
+    display: block;
     font-family: "PT Sans", sans-serif;
     font-weight: 700;
     font-size: 20px;
     line-height: 24px;
+    padding: 20px 16px;
     color: #000000;
     text-align: center;
     text-decoration: none;
 }
 
-.link-button {
-    color: #ffffff;
+.navigation-user .navigation-link {
+    min-width: 20px;
+    min-height: 20px;
+}
+
+.navigation-user .navigation-link:last-child {
+    padding-left: 20px;
 }
 
 .search {
-    background-image: url("../images/context-icons/search.svg");
-    background-repeat: no-repeat;
+    /*background-image: url("../images/context-icons/search.svg");*/
+    /*background-repeat: no-repeat;*/
 }
 
 .favorite {
-    background-image: url("../images/context-icons/heart.svg");
-    background-repeat: no-repeat;
+    /*background-image: url("../images/context-icons/heart.svg");*/
+    /*background-repeat: no-repeat;*/
 }
 
 .page-container {
@@ -123,19 +146,20 @@ ul {
 .welcome-sedona {
     color: #000000;
     background-image: url("../images/background-image.jpg");
-    background-size: 100% auto, cover;
+    background-size: 100% auto;
     background-color: #ffffff;
     background-repeat: no-repeat;
     text-align: center;
 }
 
 .welcome-sedona-image {
-    display: block;
-    margin: 0 auto;
+    margin: 51px 0 82px;
 }
 
 .preview {
     text-align: center;
+    padding-top: 69px;
+    padding-bottom: 69px;
 }
 
 .preview-title {
@@ -143,30 +167,39 @@ ul {
     font-size: 30px;
     line-height: 36px;
     text-transform: uppercase;
+    margin-bottom: 25px;
 }
 
 .about-sedona-list {
+    margin: 0;
+    padding: 0;
     display: flex;
     flex-wrap: wrap;
     text-align: center;
-    margin: 0;
-    padding: 0;
+    list-style: none;
 }
 
 .about-sedona-item {
     width: 400px;
+    height: 385px;
     color: #000000;
     font-size: 18px;
     line-height: 21px;
-    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .about-sedona-item-city {
+    width: 1200px;
     display: flex;
     text-align: center;
+    justify-content: flex-end;
 }
 
 .about-sedona-item-bridge {
+    width: 1200px;
     display: flex;
     flex-direction: row-reverse;
 }
@@ -176,6 +209,11 @@ ul {
     font-size: 24px;
     line-height: 28px;
     text-transform: uppercase;
+    width: 175px;
+}
+
+.about-sedona-description {
+    width: 230px;
 }
 
 .about-sedona-item {
@@ -194,26 +232,38 @@ ul {
 
 .after-view {
     text-align: center;
+    padding-top: 64px;
+    padding-bottom: 64px;
 }
 
 .advantages-list {
     margin: 0;
     padding: 0;
+    list-style: none;
     display: flex;
     flex-wrap: wrap;
     text-align: center;
-    justify-content: center;
+    /*justify-content: center;*/
 }
 
 .advantages-item {
+    margin: 0;
+    padding: 0;
     width: 400px;
+    height: 385px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .advantages-item-icon {
+    padding: 0;
+    margin: 0;
+    text-align: center;
     background-repeat: no-repeat;
     width: 80px;
     height: 80px;
-    margin: 0 auto;
 }
 
 .house {
@@ -233,6 +283,19 @@ ul {
     font-size: 24px;
     line-height: 28px;
     text-transform: uppercase;
+    max-width: 230px;
+    text-align: center;
+}
+
+.advantages-item-text {
+    max-width: 230px;
+    font-family: "PT Sans", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+    text-align: center;
+    text-decoration: none;
 }
 
 .advantages-item:first-child, .advantages-item:last-child {
@@ -240,7 +303,9 @@ ul {
 }
 
 .to-catalog {
+    margin: 0;
     text-align: center;
+    padding: 96px;
 }
 
 .to-catalog-title {
@@ -248,11 +313,13 @@ ul {
     font-size: 30px;
     line-height: 36px;
     text-transform: uppercase;
+    margin-bottom: 20px;
 }
 
 .to-catalog-text {
     font-size: 22px;
     line-height: 26px;
+    margin-bottom: 54px;
 }
 
 .page-footer {
@@ -269,6 +336,9 @@ ul {
 }
 
 .subscribe {
+    margin: 0;
+    padding-top: 96px;
+    padding-bottom: 104px;
     color: #ffffff;
     text-align: center;
     background-image: url("../images/background-image-subscribe.jpg");
@@ -277,10 +347,21 @@ ul {
 }
 
 .subscribe-title {
+    margin-bottom: 20px;
     font-weight: 700;
     font-size: 30px;
     line-height: 36px;
     text-transform: uppercase;
+}
+
+.subscribe-text {
+    margin-bottom: 54px;
+}
+
+.subscribe-form {
+    display: flex;
+    text-align: center;
+    justify-content: center;
 }
 
 .subscribe-form-input {
@@ -300,7 +381,30 @@ ul {
     border-top-left-radius: 0;
 }
 
+.contacts-container {
+    margin: 40px auto 30px;
+    padding: 0;
+    display: flex;
+    width: 1060px;
+    text-align: center;
+}
+
+.socials-list {
+    margin: 5px 0;
+    padding: 0;
+    display: flex;
+    width: 200px;
+    height: 40px;
+    text-align: center;
+    list-style: none;
+}
+
 .socials-item-link {
+    margin: 0;
+    display: block;
+    min-width: 48px;
+    min-height: 40px;
+    padding: 14px;
     font-family: "PT Sans", sans-serif;
     font-weight: 700;
     font-size: 20px;
@@ -308,13 +412,6 @@ ul {
     color: #000000;
     text-align: center;
     text-decoration: none;
-}
-
-.socials-list {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    width: 200px;
 }
 
 .vk-logo {
@@ -340,6 +437,13 @@ ul {
     text-decoration: none;
 }
 
+.footer-contacts-email-htmlacademy {
+    width: 115px;
+    height: 33px;
+    background-image: url("../images/context-logo/HTML-Academy-logo.svg");
+    background-repeat: no-repeat;
+}
+
 /*CSS for catalog.html*/
 
 .filters {
@@ -351,6 +455,7 @@ ul {
     font-size: 20px;
     line-height: 24px;
     font-weight: 700;
+    margin-bottom: 50px;
 }
 
 .filters-header-container {
@@ -358,12 +463,18 @@ ul {
     flex-direction: column;
     width: 1060px;
     margin: 0 auto;
+    padding-bottom: 70px;
 }
 
 .breadcrumbs-list {
     margin: 0;
     padding: 0;
     display: flex;
+    list-style: none;
+}
+
+.breadcrumbs-item:not(:last-child) {
+    padding-right: 10px;
 }
 
 .filters-title {
@@ -373,6 +484,8 @@ ul {
 }
 
 .breadcrumbs-link {
+    min-width: 12px;
+    min-height: 12px;
     font-size: 16px;
     line-height: 21px;
     color: #ffffff;
@@ -393,12 +506,12 @@ ul {
 }
 
 .infrastructure {
-    width: 152px;
+    width: 150px;
     margin-right: 70px;
 }
 
 .type-of-housing {
-    width: 152px;
+    width: 150px;
     margin-right: 140px;
 }
 
@@ -416,6 +529,7 @@ ul {
     font-size: 18px;
     line-height: 23px;
     font-weight: 400;
+    list-style: none;
 }
 
 .search-filter-title {
@@ -433,6 +547,7 @@ ul {
     font-size: 18px;
     line-height: 23px;
     font-weight: 400;
+    list-style: none;
 }
 
 .price-input {
@@ -471,10 +586,12 @@ ul {
 }
 
 .search-filter-container {
+    padding: 0;
     display: flex;
     width: 1060px;
+    height: 50px;
     text-align: center;
-    margin: 0 auto;
+    margin-bottom: 40px;
 }
 
 .search-filter-title {
@@ -482,15 +599,25 @@ ul {
 }
 
 .select-control {
+    padding: 0;
     width: 292px;
-    margin-right: 70px;
 }
 
 .type-of-showing {
-    margin: 0;
+    margin-left: auto;
     padding: 0;
     display: flex;
+    flex-wrap: wrap;
     max-width: 160px;
+    list-style: none;
+    text-align: center;
+}
+
+.type-of-showing li {
+    margin: 0;
+    padding: 0;
+    width: 48px;
+    height: 48px;
 }
 
 .search-filter {
@@ -510,19 +637,20 @@ ul {
 .show-three-on-row {
     background-image: url("../images/icons-for-filter/filter-style-first.svg");
     background-repeat: no-repeat;
-    border: 1px solid #333333;
 }
 
 .show-one-on-row {
     background-image: url("../images/icons-for-filter/filter-style-second.svg");
     background-repeat: no-repeat;
-    border: 1px solid #E5E5E5;
 }
 
 .show-on-column {
     background-image: url("../images/icons-for-filter/filter-style-third.svg");
     background-repeat: no-repeat;
-    border: 1px solid #E5E5E5;
+}
+
+.product-cards {
+    margin-bottom: 40px;
 }
 
 .product-list {
@@ -531,18 +659,22 @@ ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    gap: 20px;
 }
 
 .product-card {
     border: 1px solid #E6E6E6;
+    padding: 20px;
     border-radius: 4px;
     width: 340px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    text-align: center;
+    gap: 16px;
 }
 
 .product-card-link {
+    padding: 0;
     font-family: "PT Sans", sans-serif;
     color: #000000;
     font-size: 24px;
@@ -551,13 +683,22 @@ ul {
     text-decoration: none;
 }
 
+.product-card-title {
+    margin: 0;
+    padding: 0;
+}
+
 .additional-info {
+    margin: 0;
+    padding: 0;
     display: flex;
     justify-content: space-between;
     width: 300px;
 }
 
 .additional-buttons {
+    margin: 0;
+    padding: 0;
     display: flex;
     width: 300px;
     justify-content: space-between;
@@ -575,6 +716,11 @@ ul {
     background-color: #7DB54F;
 }
 
+.rating {
+    margin: 0;
+    padding: 0;
+}
+
 .rating-text {
     background-color: #E6E6E6;
     border-radius: 4px;
@@ -586,6 +732,7 @@ ul {
 .pagination {
     display: flex;
     width: 1060px;
+    height: 60px;
     margin: 0 auto;
     padding: 0;
 }
