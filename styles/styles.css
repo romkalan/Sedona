@@ -390,13 +390,17 @@ body {
 }
 
 .socials-list {
-    margin: 5px 0;
+    margin: 0;
     padding: 0;
     display: flex;
+    flex-wrap: wrap;
     width: 200px;
-    height: 40px;
-    text-align: center;
     list-style: none;
+}
+
+.socials-item {
+    width: 48px;
+    height: 48px;
 }
 
 .socials-item-link {
@@ -464,6 +468,12 @@ body {
     width: 1060px;
     margin: 0 auto;
     padding-bottom: 70px;
+}
+
+.filters-title {
+    padding: 0;
+    margin-top: 35px;
+    margin-bottom: 8px;
 }
 
 .breadcrumbs-list {
@@ -537,6 +547,7 @@ body {
     line-height: 36px;
     font-weight: 700;
     text-transform: uppercase;
+    margin-right: 200px;
 }
 
 .select-control {
@@ -592,10 +603,6 @@ body {
     height: 50px;
     text-align: center;
     margin-bottom: 40px;
-}
-
-.search-filter-title {
-    margin-right: 200px;
 }
 
 .select-control {
