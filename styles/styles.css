@@ -705,17 +705,15 @@ body {
 .product-list {
     margin: 0;
     padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    display: grid;
     gap: 20px;
+    grid-template-columns: repeat(3, 340px);
 }
 
 .product-card {
     border: 1px solid #E6E6E6;
     padding: 20px;
     border-radius: 4px;
-    width: 340px;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -777,6 +775,23 @@ body {
     justify-content: space-between;
     margin: 0;
     padding: 0;
+}
+
+.rating-stars {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    width: 140px;
+    display: flex;
+    gap: 6px;
+}
+
+.star {
+    background-image: url("../images/context-icons/star-icon.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    min-width: 18px;
+    min-height: 18px;
 }
 
 .rating-text {
