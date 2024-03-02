@@ -540,6 +540,7 @@ body {
 }
 
 .infrastructure {
+    border: 0;
     margin: 0 70px 0 0;
     padding: 0;
     width: 150px;
@@ -563,6 +564,7 @@ body {
 }
 
 .type-of-housing {
+    border: 0;
     margin: 0 140px 0 0;
     padding: 0;
     width: 150px;
@@ -582,6 +584,7 @@ body {
 }
 
 .price {
+    border: 0;
     margin: 0;
     padding: 0;
     display: grid;
