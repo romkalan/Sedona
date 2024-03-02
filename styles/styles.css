@@ -540,31 +540,72 @@ body {
 }
 
 .infrastructure {
+    margin: 0 70px 0 0;
+    padding: 0;
     width: 150px;
-    margin-right: 70px;
 }
 
-.type-of-housing {
-    width: 150px;
-    margin-right: 140px;
-}
-
-.price {
-    width: 290px;
-    margin-right: 70px;
-}
-
-.buttons-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
+.fieldset-title {
+    margin-bottom: 32px;
 }
 
 .infrastructure-list {
+    margin: 0;
+    padding: 0;
     font-size: 18px;
     line-height: 23px;
     font-weight: 400;
     list-style: none;
+}
+
+.infrastructure-item:not(:last-child) {
+    margin-bottom: 16px;
+}
+
+.type-of-housing {
+    margin: 0 140px 0 0;
+    padding: 0;
+    width: 150px;
+}
+
+.type-of-housing-list {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    line-height: 23px;
+    font-weight: 400;
+    list-style: none;
+}
+
+.type-of-housing-item:not(:last-child) {
+    margin-bottom: 16px;
+}
+
+.price {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    box-sizing: border-box;
+    grid-template-columns: 145px 145px;
+    row-gap: 32px;
+    width: 290px;
+}
+
+.price-input {
+    width: 145px;
+}
+
+.price-slider {
+    margin: 0;
+    padding: 0;
+}
+
+.buttons-container {
+    margin-left: auto;
+    display: flex;
+    gap: 32px;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
 .search-filter-title {
@@ -577,13 +618,6 @@ body {
 
 .select-control {
     color: #333333;
-}
-
-.type-of-housing-list {
-    font-size: 18px;
-    line-height: 23px;
-    font-weight: 400;
-    list-style: none;
 }
 
 .price-input {
@@ -707,7 +741,7 @@ body {
     padding: 0;
     display: grid;
     gap: 20px;
-    grid-template-columns: repeat(3, 340px);
+    grid-template-columns: repeat(3, min-content);
 }
 
 .product-card {
@@ -717,10 +751,12 @@ body {
     display: flex;
     flex-direction: column;
     text-align: center;
+    flex-grow: 1;
     gap: 16px;
 }
 
 .product-card-link {
+    margin: 0;
     padding: 0;
     font-family: "PT Sans", sans-serif;
     color: #000000;
