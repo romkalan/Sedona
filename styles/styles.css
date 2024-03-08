@@ -72,6 +72,7 @@ body {
     border-color: transparent;
     color: #ffffff;
     font-family: "PT Sans", sans-serif;
+    font-weight: 700;
     font-size: 16px;
     line-height: 20px;
     text-transform: uppercase;
@@ -136,21 +137,18 @@ body {
     min-height: 20px;
 }
 
-.navigation-user .navigation-link:last-child {
-    padding-left: 20px;
+.search {
+    background-image: url("../images/context-icons/search.svg");
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
-/*.search {*/
-/*    background-image: url("../images/context-icons/search.svg");*/
-/*    background-repeat: no-repeat;*/
-/*    background-position: center;*/
-/*}*/
-
-/*.favorite {*/
-/*    background-image: url("../images/context-icons/heart.svg");*/
-/*    background-repeat: no-repeat;*/
-/*    background-position: center;*/
-/*}*/
+.favorite {
+    background-image: url("../images/context-icons/heart.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+}
 
 .favorite-numbers {
     font-size: 10px;
@@ -158,8 +156,10 @@ body {
     background-color: #7DB54F;
     border-radius: 50%;
     color: #ffffff;
-    margin: 0;
+    margin-top: -23px;
+    margin-left: -3px;
     padding: 5px;
+    position: absolute;
 }
 
 .button-link {
@@ -167,6 +167,7 @@ body {
     color: #ffffff;
     font-size: 16px;
     line-height: 20px;
+    margin-left: 20px;
 }
 
 .page-container {
@@ -355,6 +356,14 @@ body {
     margin-bottom: 54px;
 }
 
+.to-catalog-button {
+    font-family: "PT Sans", sans-serif;
+    font-size: 20px;
+    line-height: 36px;
+    font-weight: 700;
+    padding: 8px 50px;
+}
+
 .page-footer {
     margin: 0 auto;
     width: 1200px;
@@ -419,6 +428,11 @@ body {
     background-color: #82B3D3;
     border-bottom-left-radius: 0;
     border-top-left-radius: 0;
+    font-family: "PT Sans", sans-serif;
+    font-size: 20px;
+    line-height: 36px;
+    font-weight: 700;
+    padding: 8px 50px;
 }
 
 .contacts-container {
@@ -553,9 +567,7 @@ body {
 .home-icon {
     background-image: url("../images/context-icons/home.svg");
     background-repeat: no-repeat;
-    background-color: #7DB54F;
-    min-width: 12px;
-    min-height: 12px;
+    background-position: center;
 }
 
 .catalog-filter-container {
@@ -689,10 +701,14 @@ body {
 
 .button-accept {
     background-color: #82B3D3;
+    font-family: "PT Sans", sans-serif;
+    font-weight: 700;
 }
 
 .button-cancel {
     background-color: transparent;
+    font-family: "PT Sans", sans-serif;
+    font-weight: 700;
 }
 
 .select-control {
