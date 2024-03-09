@@ -549,8 +549,8 @@ body {
 }
 
 .breadcrumbs-item {
-    min-width: 12px;
-    min-height: 12px;
+    min-width: 13px;
+    min-height: 15px;
     margin-right: 28px;
 }
 
@@ -568,6 +568,10 @@ body {
     background-image: url("../images/context-icons/home.svg");
     background-repeat: no-repeat;
     background-position: center;
+}
+
+.home-icon:after {
+
 }
 
 .catalog-filter-container {
