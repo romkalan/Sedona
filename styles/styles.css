@@ -158,8 +158,6 @@ body {
 }
 
 .navigation-user .navigation-link {
-    min-width: 20px;
-    min-height: 20px;
     cursor: pointer;
 }
 
@@ -600,15 +598,20 @@ body {
     display: flex;
     flex-wrap: wrap;
     list-style: none;
+    align-items: center;
 }
 
 .breadcrumbs-item {
+    position: relative;
     min-width: 13px;
     min-height: 21px;
     margin-right: 28px;
 }
 
 .breadcrumbs-link {
+    display: block;
+    min-width: 13px;
+    min-height: 21px;
     margin: 0;
     padding: 0;
     font-size: 16px;
@@ -617,6 +620,23 @@ body {
     text-decoration: none;
     text-align: center;
     cursor: pointer;
+}
+
+.breadcrumbs-item::after {
+    content: "";
+    display: block;
+    position: absolute;
+    background-image: url("../images/context-icons/arrow.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 8px;
+    right: -18px;
+    top: 6px;
+    bottom: 6px;
+}
+
+.breadcrumbs-item:last-child::after {
+    content: none;
 }
 
 .breadcrumbs-link:hover {
