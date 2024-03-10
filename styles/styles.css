@@ -133,6 +133,7 @@ body {
 }
 
 .navigation-link {
+    position: relative;
     margin: 0;
     display: block;
     font-family: "PT Sans", sans-serif;
@@ -144,6 +145,16 @@ body {
     text-align: center;
     text-decoration: none;
     cursor: pointer;
+}
+
+.navigation-link-current::before {
+    position: absolute;
+    background-color: #756257;
+    height: 2px;
+    right: 16px;
+    left: 16px;
+    bottom: -1px;
+    content: "";
 }
 
 .navigation-user .navigation-link {
