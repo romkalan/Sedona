@@ -80,6 +80,7 @@ body {
     text-align: center;
     cursor: pointer;
     vertical-align: middle;
+    transition: background-color 250ms ease-in-out, color 250ms ease-in-out;
 }
 
 .button:hover, .button:focus {
@@ -194,6 +195,7 @@ body {
     line-height: 20px;
     margin-left: 20px;
     cursor: pointer;
+    transition: background-color 250ms ease-in-out, color 250ms ease-in-out;
 }
 
 .page-container {
@@ -828,6 +830,7 @@ body {
     text-decoration: none;
     text-align: center;
     cursor: pointer;
+    transition: background-color 250ms ease-in-out, color 250ms ease-in-out;
 }
 
 .button-cancel:hover {
