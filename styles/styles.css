@@ -514,6 +514,7 @@ body {
     text-decoration: none;
     background-position: center;
     cursor: pointer;
+    transition: fill 250ms ease-in-out;
 }
 
 .social-icon {
@@ -538,6 +539,7 @@ body {
     line-height: 40px;
     text-transform: uppercase;
     text-decoration: none;
+    transition: color 250ms ease-in-out;
 }
 
 .footer-contacts-phone:hover {
@@ -550,6 +552,10 @@ body {
 
 .footer-contacts-phone:active {
     color: rgba(117, 97, 87, 0.3);
+}
+
+.footer-contacts-email-htmlacademy {
+    transition: fill 250ms ease-in-out;
 }
 
 .footer-contacts-email-htmlacademy:hover .contact-email {
@@ -1100,6 +1106,7 @@ body {
     border-radius: 4px;
     text-decoration: none;
     cursor: pointer;
+    transition: background-color 250ms ease-in-out, color 250ms ease-in-out;
 }
 
 .pagination-link:hover, .pagination-link:focus {
