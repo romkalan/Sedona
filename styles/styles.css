@@ -147,6 +147,7 @@ body {
     text-align: center;
     text-decoration: none;
     cursor: pointer;
+    transition: background-color 250ms ease-in-out, color 250ms ease-in-out;
 }
 
 .navigation-link-current::before {
@@ -629,6 +630,7 @@ body {
     text-decoration: none;
     text-align: center;
     cursor: pointer;
+    transition: color 250ms ease-in-out;
 }
 
 .breadcrumbs-item::after {
