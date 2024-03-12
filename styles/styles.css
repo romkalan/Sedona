@@ -729,25 +729,46 @@ body {
     width: 100%;
 }
 
-.price-input {
+.field {
     width: 143px;
+    margin: 0;
     height: 48px;
-    padding-left: 20px;
+    font-family: inherit;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 700;
+    padding: 20px 12px;
     border: none;
     background-color: #F2F2F2;
+    border: 0;
 }
 
-.price-input:hover {
+.field:hover {
     background-color: #E6E6E6;
+    border: 0;
 }
 
-.price-input:focus {
+.field:focus, .field:active {
     background-color: #E6E6E6;
-    border: 2px solid #83B3D3;
+    border: 0;
+    outline: 2px solid #83B3D3;
 }
 
-.price-input::placeholder {
+.field::placeholder {
     color: #000000;
+}
+
+.min-price-input-container, .max-price-input-container {
+    position: relative;
+    width: 143px;
+}
+
+.min-price-context, .max-price-context {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 12px;
+    color: rgba(0, 0, 0, 0.3);
 }
 
 .price-slider {
