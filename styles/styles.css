@@ -1378,7 +1378,7 @@ body {
 }
 
 .search-label {
-    min-width: 137px;
+    /*min-width: 137px;*/
     box-sizing: border-box;
 }
 
@@ -1408,6 +1408,12 @@ body {
     font-size: 20px;
     font-weight: 700;
     line-height: 24px;
+}
+
+.field-group-mini {
+    display: flex;
+    width: 247px;
+    justify-content: space-between;
 }
 
 .field-group-mini .field {
