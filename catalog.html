@@ -75,18 +75,27 @@
 							</legend>
 							<ul class="infrastructure-list">
 								<li class="infrastructure-item">
-									<label>
-										<input type="checkbox" checked>Бассейн
+									<label class="control">
+										<input class="visually-hidden control-input" name="swimming-pool"
+										       type="checkbox" checked>
+										<span class="control-mark"></span>
+										<span class="control-label">Бассейн</span>
 									</label>
 								</li>
 								<li class="infrastructure-item">
-									<label>
-										<input type="checkbox" checked>Парковка
+									<label class="control">
+										<input class="visually-hidden control-input" name="parking"
+										       type="checkbox" checked>
+										<span class="control-mark"></span>
+										<span class="control-label">Парковка</span>
 									</label>
 								</li>
 								<li class="infrastructure-item">
-									<label>
-										<input type="checkbox">Wi-Fi
+									<label class="control">
+										<input class="visually-hidden control-input" name="wi-fi"
+										       type="checkbox">
+										<span class="control-mark"></span>
+										<span class="control-label">Wi-Fi</span>
 									</label>
 								</li>
 							</ul>
@@ -98,19 +107,26 @@
 							<ul class="type-of-housing-list">
 								<li class="type-of-housing-item">
 									<label class="control">
-										<input class="control-input" type="radio" name="product-group" value="hotel"
-										       checked>Гостиница
+										<input class="visually-hidden control-input" type="radio"
+										       name="product-group" value="hotel" checked>
+										<span class="control-mark-circle"></span>
+										<span class="control-label">Гостиницы</span>
 									</label>
 								</li>
 								<li class="type-of-housing-item">
 									<label class="control">
-										<input class="control-input" type="radio" name="product-group" value="motel">Мотель
+										<input class="visually-hidden control-input" type="radio" name="product-group"
+										       value="motel">
+										<span class="control-mark-circle"></span>
+										<span class="control-label">Мотель</span>
 									</label>
 								</li>
 								<li class="type-of-housing-item">
 									<label class="control">
-										<input class="control-input" type="radio" name="product-group"
-										       value="apartment">Апартаменты
+										<input class="visually-hidden control-input" type="radio"
+										       name="product-group" value="apartment">
+										<span class="control-mark-circle"></span>
+										<span class="control-label">Апартаменты</span>
 									</label>
 								</li>
 							</ul>
@@ -121,13 +137,15 @@
 							</legend>
 							<div class="min-price-input-container">
 								<label class="price-min">
-									<input class=" field price-input price-input-min" type="number" min="0" step="any" placeholder="0">
+									<input class=" field price-input price-input-min" type="number" min="0" step="any"
+									       placeholder="0">
 									<span class="min-price-context">от</span>
 								</label>
 							</div>
 							<div class="max-price-input-container">
 								<label class="price-max">
-									<input class="field price-input price-input-max" type="number" min="100000" step="any"
+									<input class="field price-input price-input-max" type="number" min="100000"
+									       step="any"
 									       placeholder="9000">
 									<span class="max-price-context">до</span>
 								</label>
