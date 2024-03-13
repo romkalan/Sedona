@@ -1515,6 +1515,10 @@ body {
     height: 60px;
 }
 
+.search-form-button:hover {
+    background-color: #68A2CA;
+}
+
 .modal-container-close {
     display: none;
 }
