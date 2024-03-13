@@ -884,11 +884,23 @@ body {
     margin-right: 200px;
 }
 
+.select {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 292px;
+}
+
 .select-control {
-    padding-left: 20px;
-    padding-top: 14px;
+    width: 100%;
+    padding: 14px 131px 14px 20px;
+    appearance: none;
+    font: inherit;
     color: #333333;
     border: 2px solid #E5E5E5;
+    background-image: url("../images/context-icons/arrow-to-bottom.svg");
+    background-repeat: no-repeat;
+    background-position: right 16px center;
 }
 
 .select-control:hover, .select-control:focus {
