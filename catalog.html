@@ -121,21 +121,30 @@
 							</legend>
 							<div class="min-price-input-container">
 								<label class="price-min">
-									<input class=" field price-input" type="number" min="0" step="any" placeholder="0">
+									<input class=" field price-input price-input-min" type="number" min="0" step="any" placeholder="0">
 									<span class="min-price-context">от</span>
 								</label>
 							</div>
 							<div class="max-price-input-container">
 								<label class="price-max">
-									<input class="field price-input" type="number" min="100000" step="any"
+									<input class="field price-input price-input-max" type="number" min="100000" step="any"
 									       placeholder="9000">
 									<span class="max-price-context">до</span>
 								</label>
 							</div>
 							<br>
-							<label class="price-slider">
-								<input type="range" min="0" max="100000" value="80000">
-							</label>
+							<div class="range">
+								<div class="range-scale">
+									<div class="range-bar" style="left: 0; width: 226px;">
+										<button class="range-toggle toggle-min">
+											<span class="visually-hidden">Изменить минимальную цену</span>
+										</button>
+										<button class="range-toggle toggle-max">
+											<span class="visually-hidden">Изменить максимальную цену</span>
+										</button>
+									</div>
+								</div>
+							</div>
 						</fieldset>
 						<div class="buttons-container">
 							<button class="button button-accept" type="submit">
