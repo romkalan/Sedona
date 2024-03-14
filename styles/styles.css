@@ -1450,6 +1450,71 @@ body {
     margin: 0 0 4px 0;
 }
 
+.tooltip {
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    left: 0;
+}
+
+.info-button {
+    border: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    display: block;
+    left: 59px;
+    cursor: pointer;
+    background-color: transparent;
+    background-image: url("../images/context-icons/info.svg");
+}
+
+/*.info-block {*/
+/*    position: absolute;*/
+/*    bottom: 34px;*/
+/*    right: 112px;*/
+/*}*/
+
+.info-block-text {
+    margin: 0;
+    padding: 16px 20px;
+    background-color: #333333;
+    color: #FFFFFF;
+    font-size: 16px;
+    line-height: 20px;
+    border-radius: 10px;
+    width: 256px;
+    position: absolute;
+    top: 51px;
+    left: -51px;
+    z-index: 1;
+    display: none;
+}
+
+.info-block-text::before {
+    content: "";
+    position: absolute;
+    width: 19px;
+    height: 19px;
+    top: -9px;
+    right: 124px;
+    background-color: #333333;
+    transform: rotate(45deg);
+}
+
+.info-button:hover + .info-block-text,
+.info-button:focus + .info-block-text,
+.info-button:active + .info-block-text {
+    display: block;
+}
+
+.form-label-icon {
+    position: relative;
+    padding-right: 16px;
+}
+
 .reduce-button {
     position: absolute;
     width: 24px;
@@ -1498,17 +1563,6 @@ body {
     border: 2px solid #82B3D3;
 }
 
-.info-button {
-    position: absolute;
-    width: 26px;
-    height: 26px;
-    border: none;
-    left: 59px;
-    cursor: pointer;
-    background-color: transparent;
-    background-image: url("../images/context-icons/info.svg");
-}
-
 /*Add pop-ower*/
 .info-button:active {
 
@@ -1524,34 +1578,6 @@ body {
 
 .search-form-button:hover {
     background-color: #68A2CA;
-}
-
-.info-block {
-    position: absolute;
-    width: 256px;
-    background-color: #333333;
-    color: #FFFFFF;
-    border-radius: 10px;
-    bottom: 34px;
-    right: 112px;
-}
-
-.info-block::before {
-    content: "";
-    position: absolute;
-    width: 19px;
-    height: 19px;
-    top: -9px;
-    right: 124px;
-    background-color: #333333;
-    transform: rotate(45deg);
-}
-
-.info-block-text {
-    font-size: 16px;
-    line-height: 20px;
-    margin: 0;
-    padding: 16px 20px;
 }
 
 .info-block-close {

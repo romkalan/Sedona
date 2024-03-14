@@ -138,7 +138,7 @@
 							<div class="min-price-input-container">
 								<label class="price-min">
 									<input class=" field price-input price-input-min" type="number" min="0" step="any"
-									       placeholder="0">
+									       value="0" placeholder="0">
 									<span class="min-price-context">от</span>
 								</label>
 							</div>
@@ -146,7 +146,7 @@
 								<label class="price-max">
 									<input class="field price-input price-input-max" type="number" min="100000"
 									       step="any"
-									       placeholder="9000">
+									       value="9000" placeholder="9000">
 									<span class="max-price-context">до</span>
 								</label>
 							</div>
@@ -154,10 +154,10 @@
 							<div class="range">
 								<div class="range-scale">
 									<div class="range-bar" style="left: 0; width: 226px;">
-										<button class="range-toggle toggle-min">
+										<button class="range-toggle toggle-min" type="button">
 											<span class="visually-hidden">Изменить минимальную цену</span>
 										</button>
-										<button class="range-toggle toggle-max">
+										<button class="range-toggle toggle-max" type="button">
 											<span class="visually-hidden">Изменить максимальную цену</span>
 										</button>
 									</div>
@@ -522,8 +522,16 @@
 						</button>
 					</p>
 					<p class="field-group field-group-mini">
-						<label class="search-label" for="childrens">Дети:</label>
-						<button class="info-button"></button>
+						<span class="search-label form-label-icon">
+							<label class="search-label" for="childrens">Дети:</label>
+							<span class="tooltip">
+								<button class="info-button"></button>
+								<span class="info-block-text">
+									Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет
+									размещаются бесплатно.
+								</span>
+							</span>
+						</span>
 						<button class="reduce-button">
 							<svg class="reduce-button-image" role="img" aria-label="Уменьшить количество" width="14"
 							     height="2" viewBox="0 0 14 2" xmlns="http://www.w3.org/2000/svg">
@@ -543,7 +551,7 @@
 				</div>
 				<button class="button search-form-button" type="submit">Найти</button>
 			</form>
-			<div class="info-block">
+			<div class="info-block info-block-close">
 				<p class="info-block-text">
 					Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет
 					размещаются бесплатно.
