@@ -1504,13 +1504,14 @@ body {
     height: 26px;
     border: none;
     left: 59px;
+    cursor: pointer;
     background-color: transparent;
     background-image: url("../images/context-icons/info.svg");
 }
 
 /*Add pop-ower*/
-.info-button:hover {
-    cursor: pointer;
+.info-button:active {
+
 }
 
 .search-form-button {
@@ -1523,6 +1524,38 @@ body {
 
 .search-form-button:hover {
     background-color: #68A2CA;
+}
+
+.info-block {
+    position: absolute;
+    width: 256px;
+    background-color: #333333;
+    color: #FFFFFF;
+    border-radius: 10px;
+    bottom: 34px;
+    right: 112px;
+}
+
+.info-block::before {
+    content: "";
+    position: absolute;
+    width: 19px;
+    height: 19px;
+    top: -9px;
+    right: 124px;
+    background-color: #333333;
+    transform: rotate(45deg);
+}
+
+.info-block-text {
+    font-size: 16px;
+    line-height: 20px;
+    margin: 0;
+    padding: 16px 20px;
+}
+
+.info-block-close {
+    display: none;
 }
 
 .modal-container-close {
