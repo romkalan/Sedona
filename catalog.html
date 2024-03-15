@@ -480,7 +480,7 @@
 	</div>
 </footer>
 
-<div class="modal-container modal-container-close">
+<div class="modal-container">
 	<div class="modal modal-search">
 		<button class="modal-close-button">
 			<span class="visually-hidden">Закрыть</span>
@@ -489,18 +489,22 @@
 			<h2 class="modal-title">Поиск гостиницы в Седоне</h2>
 
 			<form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
-				<p class="field-group date-of-enter">
-					<label class="search-label" for="search-enter">Дата Заезда:</label>
-					<input class="search-form-field field" type="text" id="search-enter" name="search-login"
-					       placeholder="27 апреля 2020" required>
-				</p>
-				<p class="message error-message">Мы не можем отправить Вас в прошлое.</p>
-				<p class="field-group date-of-exit">
-					<label class="search-label" for="search-exit">Дата Выезда:</label>
-					<input class="search-form-field field" type="text" id="search-exit" name="search-login"
-					       placeholder="1 сентября 2023" required>
-				</p>
-				<p class="message confirm-message">На эти даты есть свободные номера. Пока есть.</p>
+				<div class="field-group-long">
+					<p class="field-group date-of-enter">
+						<label class="search-label" for="search-enter">Дата Заезда:</label>
+						<input class="search-form-field field" type="text" id="search-enter" name="search-login"
+						       placeholder="27 апреля 2020" required>
+					</p>
+					<p class="message error-message">Мы не можем отправить Вас в прошлое.</p>
+				</div>
+				<div class="field-group-long">
+					<p class="field-group date-of-exit">
+						<label class="search-label" for="search-exit">Дата Выезда:</label>
+						<input class="search-form-field field" type="text" id="search-exit" name="search-login"
+						       placeholder="1 сентября 2023" required>
+					</p>
+					<p class="message confirm-message">На эти даты есть свободные номера. Пока есть.</p>
+				</div>
 				<div class="field-groups-mini">
 					<p class="field-group field-group-mini">
 						<label class="search-label" for="adults">Взрослые:</label>

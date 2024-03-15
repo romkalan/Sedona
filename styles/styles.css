@@ -1370,12 +1370,13 @@ body {
     flex-wrap: wrap;
     flex-direction: column;
     font-family: "PT Sans", sans-serif;
+    gap: 48px;
 }
 
 .field-groups-mini {
     display: flex;
     justify-content: space-between;
-    margin: 0 0 48px 0;
+    margin: 0;
 }
 
 .search-label {
@@ -1434,12 +1435,14 @@ body {
 }
 
 .message {
+    position: absolute;
     font-family: "PT Sans", sans-serif;
-    margin: 0 0 23px 0;
+    margin: 0;
     font-size: 16px;
     line-height: 21px;
     color: #333333;
     padding-left: 157px;
+    /*display: none;*/
 }
 
 .error-message {
@@ -1471,12 +1474,6 @@ body {
     background-color: transparent;
     background-image: url("../images/context-icons/info.svg");
 }
-
-/*.info-block {*/
-/*    position: absolute;*/
-/*    bottom: 34px;*/
-/*    right: 112px;*/
-/*}*/
 
 .info-block-text {
     margin: 0;
