@@ -20,6 +20,11 @@
     font-display: swap;
 }
 
+img {
+    max-width: 100%;
+    object-fit: contain;
+}
+
 html {
     height: 100%;
 }
@@ -35,6 +40,13 @@ body {
     line-height: 26px;
     color: #000000;
     background-color: #F2F2F2;
+}
+
+.shadow-container {
+    width: 1200px;
+    margin: 0 auto;
+    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
 }
 
 .main-container {
@@ -367,7 +379,8 @@ body {
 }
 
 .to-catalog {
-    margin: 0 auto 96px;
+    margin: 0 auto;
+    padding-bottom: 96px;
     text-align: center;
 }
 
@@ -473,7 +486,7 @@ body {
 }
 
 .contacts-container {
-    margin: 40px auto 30px;
+    margin: 40px auto;
     padding: 0;
     display: flex;
     width: 1060px;
